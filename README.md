@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This demo is designed for you to learn how to import and activate DJI SDK in your Xcode project.
+This demo is designed for you to learn how to import and activate DJI SDK in your Xcode project using Swift.
 
 ## Requirements
 

@@ -53,6 +53,10 @@ installed.
 > pod install
 > ~~~
 
+**3.** Header Search Paths Settings
+
+Please delete all the paths in **Header Search Paths** except `$(PODS_ROOT)/Headers/Public` in **Build Settings** to help fix the Swift compiler error: **Inclue of non-modular header inside framework module 'DJISDK'**.
+
 ## Tutorial
 
 For this demo's tutorial: **Integrate SDK into Application**, please refer to <https://developer.dji.com/mobile-sdk/documentation/application-development-workflow/workflow-integrate.html>.

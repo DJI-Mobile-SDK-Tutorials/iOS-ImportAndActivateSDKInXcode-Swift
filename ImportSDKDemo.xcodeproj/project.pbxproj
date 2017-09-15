@@ -123,6 +123,7 @@
 				TargetAttributes = {
 					A40CC9801F30803B00A30947 = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 7UL3LRJL93;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -338,7 +339,7 @@
 			baseConfigurationReference = A1E7E9645C00282831A2A9A8 /* Pods-ImportSDKDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 7UL3LRJL93;
 				ENABLE_BITCODE = NO;
 				HEADER_SEARCH_PATHS = "\"${PODS_ROOT}/Headers/Public\"";
 				INFOPLIST_FILE = ImportSDKDemo/Info.plist;
@@ -354,7 +355,7 @@
 			baseConfigurationReference = D33AA48974D9EF26FD68D176 /* Pods-ImportSDKDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 7UL3LRJL93;
 				ENABLE_BITCODE = NO;
 				HEADER_SEARCH_PATHS = "\"${PODS_ROOT}/Headers/Public\"";
 				INFOPLIST_FILE = ImportSDKDemo/Info.plist;

@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		424A2C32B0D7DA6FEC0770DF /* libPods-ImportSDKDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F76DCC4B7E09BB2CC3DBC740 /* libPods-ImportSDKDemo.a */; };
 		A40CC9851F30803B00A30947 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40CC9841F30803B00A30947 /* AppDelegate.swift */; };
 		A40CC9871F30803B00A30947 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40CC9861F30803B00A30947 /* ViewController.swift */; };
 		A40CC98A1F30803B00A30947 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A40CC9881F30803B00A30947 /* Main.storyboard */; };
@@ -16,7 +15,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		A1E7E9645C00282831A2A9A8 /* Pods-ImportSDKDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImportSDKDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ImportSDKDemo/Pods-ImportSDKDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		A40CC9811F30803B00A30947 /* ImportSDKDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImportSDKDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A40CC9841F30803B00A30947 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A40CC9861F30803B00A30947 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,8 +22,6 @@
 		A40CC98B1F30803B00A30947 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A40CC98E1F30803B00A30947 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A40CC9901F30803B00A30947 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D33AA48974D9EF26FD68D176 /* Pods-ImportSDKDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImportSDKDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-ImportSDKDemo/Pods-ImportSDKDemo.release.xcconfig"; sourceTree = "<group>"; };
-		F76DCC4B7E09BB2CC3DBC740 /* libPods-ImportSDKDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ImportSDKDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,20 +29,25 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				424A2C32B0D7DA6FEC0770DF /* libPods-ImportSDKDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3E639FB9A49A65F7F45BB12B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		A40CC9781F30803B00A30947 = {
 			isa = PBXGroup;
 			children = (
 				A40CC9831F30803B00A30947 /* ImportSDKDemo */,
 				A40CC9821F30803B00A30947 /* Products */,
-				F5E4AD33DF95F8C402A87024 /* Pods */,
-				EB85A98C65B631C3F6862B45 /* Frameworks */,
+				3E639FB9A49A65F7F45BB12B /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,23 +72,6 @@
 			path = ImportSDKDemo;
 			sourceTree = "<group>";
 		};
-		EB85A98C65B631C3F6862B45 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				F76DCC4B7E09BB2CC3DBC740 /* libPods-ImportSDKDemo.a */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		F5E4AD33DF95F8C402A87024 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				A1E7E9645C00282831A2A9A8 /* Pods-ImportSDKDemo.debug.xcconfig */,
-				D33AA48974D9EF26FD68D176 /* Pods-ImportSDKDemo.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -95,12 +79,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A40CC9931F30803B00A30947 /* Build configuration list for PBXNativeTarget "ImportSDKDemo" */;
 			buildPhases = (
-				57C1BA0D7C8E8AF6DEEC2BFD /* [CP] Check Pods Manifest.lock */,
 				A40CC97D1F30803B00A30947 /* Sources */,
 				A40CC97E1F30803B00A30947 /* Frameworks */,
 				A40CC97F1F30803B00A30947 /* Resources */,
-				03959BD0B9A28C69B39CC64A /* [CP] Embed Pods Frameworks */,
-				B0F962430AE254097C63EC0C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -118,13 +99,13 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 1140;
 				ORGANIZATIONNAME = DJI;
 				TargetAttributes = {
 					A40CC9801F30803B00A30947 = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = 7UL3LRJL93;
-						ProvisioningStyle = Automatic;
+						LastSwiftMigration = 1010;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -133,6 +114,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -158,54 +140,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		03959BD0B9A28C69B39CC64A /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ImportSDKDemo/Pods-ImportSDKDemo-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		57C1BA0D7C8E8AF6DEEC2BFD /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		B0F962430AE254097C63EC0C /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ImportSDKDemo/Pods-ImportSDKDemo-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A40CC97D1F30803B00A30947 /* Sources */ = {
@@ -243,21 +177,30 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -294,21 +237,30 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -336,33 +288,37 @@
 		};
 		A40CC9941F30803B00A30947 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A1E7E9645C00282831A2A9A8 /* Pods-ImportSDKDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 7UL3LRJL93;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_BITCODE = NO;
 				HEADER_SEARCH_PATHS = "\"${PODS_ROOT}/Headers/Public\"";
 				INFOPLIST_FILE = ImportSDKDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dji.importSDKDemoSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
 		A40CC9951F30803B00A30947 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D33AA48974D9EF26FD68D176 /* Pods-ImportSDKDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 7UL3LRJL93;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_BITCODE = NO;
 				HEADER_SEARCH_PATHS = "\"${PODS_ROOT}/Headers/Public\"";
 				INFOPLIST_FILE = ImportSDKDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dji.importSDKDemoSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};

@@ -10,53 +10,43 @@ import UIKit
 import DJISDK
 
 class ViewController: UIViewController, DJISDKManagerDelegate {
-
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidDisappear(animated)
-        DJISDKManager.registerApp(with: self)
-    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        
+        DJISDKManager.registerApp(with: self)
     }
     
     func showAlertViewWithTitle(title: String, withMessage message: String) {
-        
-        let alert = UIAlertController.init(title: title, message: message, preferredStyle: UIAlertControllerStyle.alert)
-        let okAction = UIAlertAction.init(title:"OK", style: UIAlertActionStyle.default, handler: nil)
+        let alert = UIAlertController.init(title: title, message: message, preferredStyle: UIAlertController.Style.alert)
+        let okAction = UIAlertAction.init(title:"OK", style: UIAlertAction.Style.default, handler: nil)
         alert.addAction(okAction)
         self.present(alert, animated: true, completion: nil)
-        
     }
     
-    // DJISDKManagerDelegate Methods
+    // MARK: DJISDKManagerDelegate Methods
+    
     func productConnected(_ product: DJIBaseProduct?) {
-        
         NSLog("Product Connected")
     }
     
     func productDisconnected() {
-        
         NSLog("Product Disconnected")
     }
     
     func appRegisteredWithError(_ error: Error?) {
-        
         var message = "Register App Successed!"
         if (error != nil) {
             message = "Register app failed! Please enter your app key and check the network."
-        }else{
+        } else {
             NSLog("Register App Successed!");
         }
 
         self.showAlertViewWithTitle(title:"Register App", withMessage: message)
     }
 
-
+    func didUpdateDatabaseDownloadProgress(_ progress: Progress) {
+        print("Downloading database: \(progress.completedUnitCount) / \(progress.totalUnitCount)")
+    }
 }
 
